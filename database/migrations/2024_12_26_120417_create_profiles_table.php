@@ -19,10 +19,16 @@ return new class extends Migration
             $table->tinyInteger('gender')->default(1)->comment('1:Nam, 0:Nữ');
             $table->string('phone');
             $table->string('email')->nullable();
-            $table->integer('province');
-            $table->integer('district');
-            $table->integer('commune');
-            $table->string('street_name');
+            $table->integer('province')->comment('Tỉnh');
+            $table->integer('district')->comment('Huyện');
+            $table->integer('commune')->comment('Xã');
+            $table->string('street_name')->comment('Đường');
+            $table->string('job')->nullable()->comment('nghề nghiệp');
+            $table->string('image')->nullable();
+            $table->string('BHYT')->nullable()->comment('bảo hiểm y tế');
+            $table->text('allergy')->nullable()->comment('dị ứng');
+            $table->string('medical_history')->nullable()->comment('tiền sử bệnh lý');
+            $table->string('emergency_contact')->nullable()->comment('liên lạc khẩn cấp');
             $table->timestamps();
         });
     }
