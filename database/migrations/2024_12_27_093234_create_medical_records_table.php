@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('medical_records', function (Blueprint $table) {
             $table->id();
+            $table->dateTime('examination_date')->comment('ngày khám');
+            $table->bigInteger('diagnosis')->nullable()->comment('chuẩn đoán');
+            $table->tinyInteger('height')->nullable()->comment('chiều cao');
+            $table->tinyInteger('weight')->nullable()->comment('cân nặng');
+            $table->tinyInteger('waist_circumference')->nullable()->comment('vòng bụng')->nullable();
+            $table->string('pulse')->nullable()->comment('mạch');
+            $table->string('blood_pressure')->nullable()->comment('Huyết áp');
+            $table->bigInteger('profile_id')->comment('id bệnh nhân');
+            $table->date('follow_up_appointment')->nullable()->comment('lịch hẹn tái khám');
             $table->timestamps();
         });
     }

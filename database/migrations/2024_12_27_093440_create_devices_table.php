@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('devices', function (Blueprint $table) {
             $table->id();
+            $table->string('code')->comment('Mã');
+            $table->string('name')->comment('Tên');
+            $table->dateTime('installation_date')->nullable()->comment('Ngày lắp');
+            $table->tinyInteger('status')->default(0)->comment('Tình trạng: 0: Chưa rõ, 1: Cũ, 2 Mới');
             $table->timestamps();
         });
     }

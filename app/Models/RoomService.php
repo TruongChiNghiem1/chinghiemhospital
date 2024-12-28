@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class StaffView extends Model
+class RoomService extends Model
 {
     //
 }

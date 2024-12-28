@@ -13,10 +13,20 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('code');
+            $table->string('full_name');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->date('dob');
+            $table->tinyInteger('gender')->comment('1: nam, 2: nữ');
+            $table->string('phone');
+            $table->string('email')->nullable();
+            $table->integer('position_id')->nullable()->comment('id chức vụ');
+            $table->integer('unit_id')->nullable()->comment('id đơn vị');
+            $table->string('years_of_experience')->nullable()->comment('Thâm niên trong lĩnh vực');
+            $table->tinyInteger('status')->nullable()->comment('trạng thái: 0: Nghỉ việc, 1: Đang làm, 2: Thử việc, 3: Tạm hoãn');
+            $table->string('image')->nullable()->comment('ảnh');
             $table->rememberToken();
             $table->timestamps();
         });

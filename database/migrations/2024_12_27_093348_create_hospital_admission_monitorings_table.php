@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('hospital_admission_monitorings', function (Blueprint $table) {
             $table->id();
+            $table->dateTime('test_date')->nullable()->comment('ngày kiểm tra');
+            $table->string('test_results')->comment('Kết quả kiểm tra');
             $table->timestamps();
         });
     }

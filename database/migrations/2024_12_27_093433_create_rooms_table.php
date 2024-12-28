@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('rooms', function (Blueprint $table) {
             $table->id();
+            $table->string('code')->comment('mã phòng');
+            $table->string('function')->nullable()->comment('Chức năng');
+            $table->string('note')->nullable()->comment('Ghi chú');
             $table->timestamps();
         });
     }

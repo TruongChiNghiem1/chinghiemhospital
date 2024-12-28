@@ -17,6 +17,7 @@ return new class extends Migration
             $table->integer('numerical_order');
             $table->bigInteger('service_id')->nullable();
             $table->bigInteger('room_id')->nullable();
+            $table->bigInteger('staff_id')->nullable();
             $table->tinyInteger('type')->comment('1. Số thứ tự nhận bệnh, 2. Số thứ tự phòng khám');
             $table->timestamps();
         });

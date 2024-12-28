@@ -11,8 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('test_result_profiles', function (Blueprint $table) {
+        Schema::create('admission_reasons', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->comment('Lý do nhập viện');
+            $table->text('note')->comment('ghi chú');
             $table->timestamps();
         });
     }
@@ -22,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('test_result_profiles');
+        Schema::dropIfExists('admission_reasons');
     }
 };

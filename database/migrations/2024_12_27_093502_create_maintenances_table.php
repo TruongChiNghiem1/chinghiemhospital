@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('maintenances', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('device_history_id')->comment('Mã lịch sử thiết bị');
+            $table->string('service_name')->comment('tên dịch vụ ');
+            $table->integer('quantity')->comment('số lượng');
+            $table->double('expense')->comment('chi phí');
             $table->timestamps();
         });
     }
