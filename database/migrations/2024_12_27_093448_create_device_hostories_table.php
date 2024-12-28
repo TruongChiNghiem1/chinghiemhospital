@@ -17,6 +17,8 @@ return new class extends Migration
             $table->dateTime('maintenance_day')->nullable()->comment('Ngày lắp');
             $table->string('repairman')->nullable()->comment('Chức năng');
             $table->bigInteger('repair_unit_id')->nullable()->comment('Chức năng');
+            $table->bigInteger('created_by')->nullable()->comment('Người tạo');
+            $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');
             $table->timestamps();
         });
     }

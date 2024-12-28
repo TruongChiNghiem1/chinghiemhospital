@@ -17,6 +17,8 @@ return new class extends Migration
             $table->dateTime('admission_date')->comment('ngày nhập viện');
             $table->dateTime('discharge date')->nullable()->comment('Ngày ra viện');
             $table->bigIncrements('admission_reason_id')->comment('lý do nhập viện');
+            $table->bigInteger('created_by')->nullable()->comment('Người tạo');
+            $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');
             $table->timestamps();
         });
     }

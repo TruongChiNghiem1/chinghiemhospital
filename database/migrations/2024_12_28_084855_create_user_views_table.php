@@ -30,6 +30,8 @@ return new class extends Migration
             $table->date('date_off')->nullable()->comment('ngày nghỉ việc');
             $table->string('marriage')->nullable()->comment('tình trạng hôn nhân');
             $table->string('training_process')->nullable()->comment('quá trình đào tạo');
+            $table->bigInteger('created_by')->nullable()->comment('Người tạo');
+            $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');
             $table->timestamps();
         });
     }

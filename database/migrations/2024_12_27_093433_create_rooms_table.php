@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('code')->comment('mã phòng');
             $table->string('function')->nullable()->comment('Chức năng');
             $table->string('note')->nullable()->comment('Ghi chú');
+            $table->bigInteger('created_by')->nullable()->comment('Người tạo');
+            $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');
             $table->timestamps();
         });
     }

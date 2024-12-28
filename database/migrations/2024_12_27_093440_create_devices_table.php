@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('name')->comment('Tên');
             $table->dateTime('installation_date')->nullable()->comment('Ngày lắp');
             $table->tinyInteger('status')->default(0)->comment('Tình trạng: 0: Chưa rõ, 1: Cũ, 2 Mới');
+            $table->bigInteger('created_by')->nullable()->comment('Người tạo');
+            $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');
             $table->timestamps();
         });
     }

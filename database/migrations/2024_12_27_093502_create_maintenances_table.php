@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('service_name')->comment('tên dịch vụ ');
             $table->integer('quantity')->comment('số lượng');
             $table->double('expense')->comment('chi phí');
+            $table->bigInteger('created_by')->nullable()->comment('Người tạo');
+            $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');
             $table->timestamps();
         });
     }

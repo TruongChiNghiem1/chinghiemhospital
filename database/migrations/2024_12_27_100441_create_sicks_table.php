@@ -16,8 +16,9 @@ return new class extends Migration
             $table->string('code')->comment('mã bệnh');
             $table->string('name')->comment('tên bệnh');
             $table->string('treatment_direction')->comment('Hướng điều trị');
-            $table->bigIncrements('created_by')->comment('người tạo');
             $table->string('note')->nullable()->comment('ghi chú');
+            $table->bigInteger('created_by')->nullable()->comment('Người tạo');
+            $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');
             $table->timestamps();
         });
     }

@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->dateTime('test_date')->nullable()->comment('ngày kiểm tra');
             $table->string('test_results')->comment('Kết quả kiểm tra');
+            $table->bigInteger('created_by')->nullable()->comment('Người tạo');
+            $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');
             $table->timestamps();
         });
     }

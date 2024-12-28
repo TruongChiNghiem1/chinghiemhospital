@@ -21,6 +21,8 @@ return new class extends Migration
             $table->bigIncrements('staff_id')->nullable()->comment('bác sĩ xét nghiệm');
             $table->dateTime('lab_results_date')->nullable()->comment('ngày nhận kết quả xét nghiệm');
             $table->string('note')->comment('ghi chú');
+            $table->bigInteger('created_by')->nullable()->comment('Người tạo');
+            $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');
             $table->timestamps();
         });
     }

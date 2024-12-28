@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('room_services', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('room_id');
+            $table->bigInteger('service_id');
+            $table->bigInteger('created_by')->nullable()->comment('Người tạo');
+            $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');
             $table->timestamps();
         });
     }

@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('name');
             $table->double('price');
             $table->string('note')->nullable();
+            $table->bigInteger('created_by')->nullable()->comment('Người tạo');
+            $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');
             $table->timestamps();
         });
     }

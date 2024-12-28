@@ -17,6 +17,8 @@ return new class extends Migration
             $table->bigIncrements('sick_id')->comment('Bệnh');
             $table->dateTime('examination_date')->comment('Ngày khám');
             $table->bigIncrements('medical_record_id')->comment('tên phòng xét nghiệm');
+            $table->bigInteger('created_by')->nullable()->comment('Người tạo');
+            $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');
             $table->timestamps();
         });
     }

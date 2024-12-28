@@ -22,6 +22,8 @@ return new class extends Migration
             $table->string('blood_pressure')->nullable()->comment('Huyết áp');
             $table->bigInteger('profile_id')->comment('id bệnh nhân');
             $table->date('follow_up_appointment')->nullable()->comment('lịch hẹn tái khám');
+            $table->bigInteger('created_by')->nullable()->comment('Người tạo');
+            $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');
             $table->timestamps();
         });
     }

@@ -13,6 +13,14 @@ return new class extends Migration
     {
         Schema::create('research_works', function (Blueprint $table) {
             $table->id();
+            $table->bigInteger('user_id');
+            $table->string('name');
+            $table->text('description')->nullable();
+            $table->date('start_date');
+            $table->date('end_date')->nullable();
+            $table->string('image')->nullable();
+            $table->bigInteger('created_by')->nullable()->comment('Người tạo');
+            $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');
             $table->timestamps();
         });
     }

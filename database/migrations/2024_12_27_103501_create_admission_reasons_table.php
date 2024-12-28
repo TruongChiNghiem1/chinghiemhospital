@@ -15,6 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name')->comment('Lý do nhập viện');
             $table->text('note')->comment('ghi chú');
+            $table->bigInteger('created_by')->nullable()->comment('Người tạo');
+            $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');
             $table->timestamps();
         });
     }

@@ -22,6 +22,8 @@ return new class extends Migration
             $table->integer('district')->comment('Huyện');
             $table->integer('commune')->comment('Xã');
             $table->string('street_name')->comment('Đường');
+            $table->bigInteger('created_by')->nullable()->comment('Người tạo');
+            $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');
             $table->timestamps();
         });
     }

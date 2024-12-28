@@ -13,6 +13,15 @@ return new class extends Migration
     {
         Schema::create('units', function (Blueprint $table) {
             $table->id();
+            $table->string('code');
+            $table->string('name');
+            $table->bigInteger('parent_id');
+            $table->string('parent_code');
+            $table->integer('level');
+            $table->tinyInteger('status')->comment('1 bật, 2 tắt');
+            $table->string('note')->nullable();
+            $table->bigInteger('created_by')->nullable();
+            $table->bigInteger('updated_by')->nullable();
             $table->timestamps();
         });
     }
