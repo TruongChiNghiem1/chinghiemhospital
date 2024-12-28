@@ -18,7 +18,7 @@ return new class extends Migration
             $table->bigIncrements('room_id')->nullable()->comment('id phòng');
             $table->string('room_code')->comment('mã phòng');
             $table->string('room_name')->comment('tên phòng');
-            $table->bigIncrements('staff_id')->nullable()->comment('bác sĩ xét nghiệm');
+            $table->bigIncrements('user_id')->nullable()->comment('bác sĩ xét nghiệm');
             $table->dateTime('lab_results_date')->nullable()->comment('ngày nhận kết quả xét nghiệm');
             $table->string('note')->comment('ghi chú');
             $table->bigInteger('created_by')->nullable()->comment('Người tạo');

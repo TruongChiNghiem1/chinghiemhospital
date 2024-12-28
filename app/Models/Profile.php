@@ -23,5 +23,11 @@ class Profile extends Model
         'district',
         'commune',
         'street_name',
+        'job',
+        'image',
+        'BHYT',
+        'allergy',
+        'medical_history',
+        'emergency_contact',
     ];
 }

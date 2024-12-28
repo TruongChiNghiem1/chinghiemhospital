@@ -25,6 +25,7 @@ return new class extends Migration
             ');
             $table->tinyInteger('type')->default(1)->comment('1. Chính quy, 2. Tăng ca');
             $table->bigInteger('room_id')->nullable();
+            $table->bigInteger('user_id')->nullable();
             $table->bigInteger('created_by')->nullable()->comment('Người tạo');
             $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');
             $table->timestamps();

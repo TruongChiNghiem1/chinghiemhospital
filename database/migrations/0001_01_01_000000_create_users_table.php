@@ -15,13 +15,12 @@ return new class extends Migration
             $table->id();
             $table->string('code');
             $table->string('full_name');
-            $table->string('email')->unique();
+            $table->string('email')->unique()->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->date('dob');
             $table->tinyInteger('gender')->comment('1: nam, 2: nữ');
             $table->string('phone');
-            $table->string('email')->nullable();
             $table->integer('position_id')->nullable()->comment('id chức vụ');
             $table->integer('unit_id')->nullable()->comment('id đơn vị');
             $table->string('years_of_experience')->nullable()->comment('Thâm niên trong lĩnh vực');
