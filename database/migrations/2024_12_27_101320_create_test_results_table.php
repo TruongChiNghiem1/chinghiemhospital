@@ -14,11 +14,11 @@ return new class extends Migration
         Schema::create('test_results', function (Blueprint $table) {
             $table->id();
             $table->string('name')->comment('tên phòng xét nghiệm');
-            $table->bigIncrements('result')->nullable()->comment('kết quả');
-            $table->bigIncrements('room_id')->nullable()->comment('id phòng');
+            $table->bigInteger('result')->nullable()->comment('kết quả');
+            $table->bigInteger('room_id')->nullable()->comment('id phòng');
             $table->string('room_code')->comment('mã phòng');
             $table->string('room_name')->comment('tên phòng');
-            $table->bigIncrements('user_id')->nullable()->comment('bác sĩ xét nghiệm');
+            $table->bigInteger('user_id')->nullable()->comment('bác sĩ xét nghiệm');
             $table->dateTime('lab_results_date')->nullable()->comment('ngày nhận kết quả xét nghiệm');
             $table->string('note')->comment('ghi chú');
             $table->bigInteger('created_by')->nullable()->comment('Người tạo');

@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('doctor_sick_medicals', function (Blueprint $table) {
             $table->id();
-            $table->bigIncrements('user_id')->comment('Bác sĩ');
-            $table->bigIncrements('sick_id')->comment('Bệnh');
+            $table->bigInteger('user_id')->comment('Bác sĩ');
+            $table->bigInteger('sick_id')->comment('Bệnh');
             $table->dateTime('examination_date')->comment('Ngày khám');
-            $table->bigIncrements('medical_record_id')->comment('tên phòng xét nghiệm');
+            $table->bigInteger('medical_record_id')->comment('tên phòng xét nghiệm');
             $table->bigInteger('created_by')->nullable()->comment('Người tạo');
             $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');
             $table->timestamps();
