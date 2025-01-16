@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('profiles', function (Blueprint $table) {
+        Schema::create('patients', function (Blueprint $table) {
             $table->id();
             $table->string('code')->unique();
             $table->string('full_name');
@@ -29,6 +29,7 @@ return new class extends Migration
             $table->text('allergy')->nullable()->comment('dị ứng');
             $table->string('medical_history')->nullable()->comment('tiền sử bệnh lý');
             $table->string('emergency_contact')->nullable()->comment('liên lạc khẩn cấp');
+            $table->string('indentity_card')->comment('Số CCCD');
             $table->timestamps();
         });
     }
@@ -38,6 +39,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('profiles');
+        Schema::dropIfExists('patients');
     }
 };

@@ -25,6 +25,7 @@ return new class extends Migration
             $table->integer('unit_id')->nullable()->comment('id đơn vị');
             $table->string('years_of_experience')->nullable()->comment('Thâm niên trong lĩnh vực');
             $table->tinyInteger('status')->nullable()->comment('trạng thái: 0: Nghỉ việc, 1: Đang làm, 2: Thử việc, 3: Tạm hoãn');
+            $table->tinyInteger('level')->nullable()->comment('1: admin, 2: bác sĩ, 3: Điều dưỡng, 4: nhân viên, 5: Hộ lý');
             $table->string('image')->nullable()->comment('ảnh');
             $table->bigInteger('created_by')->nullable()->comment('Người tạo');
             $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');

@@ -20,7 +20,7 @@ class MedicalRecord extends Model
         'waist_circumference',
         'pulse',
         'blood_pressure',
-        'profile_id',
+        'patient_id',
         'follow_up_appointment',
         'created_by',
         'updated_by',

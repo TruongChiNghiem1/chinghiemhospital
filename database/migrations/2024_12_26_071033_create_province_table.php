@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('province', function (Blueprint $table) {
             $table->id();
             $table->string('parent_code')->nullable();
-            $table->string('code')->unique();
+            $table->string('code');
             $table->tinyInteger('level');
             $table->string('name');
             $table->string('level_name');

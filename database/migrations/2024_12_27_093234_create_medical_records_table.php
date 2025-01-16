@@ -20,7 +20,7 @@ return new class extends Migration
             $table->tinyInteger('waist_circumference')->nullable()->comment('vòng bụng')->nullable();
             $table->string('pulse')->nullable()->comment('mạch');
             $table->string('blood_pressure')->nullable()->comment('Huyết áp');
-            $table->bigInteger('profile_id')->comment('id bệnh nhân');
+            $table->bigInteger('patient_id')->comment('id bệnh nhân');
             $table->date('follow_up_appointment')->nullable()->comment('lịch hẹn tái khám');
             $table->bigInteger('created_by')->nullable()->comment('Người tạo');
             $table->bigInteger('updated_by')->nullable()->comment('Người cập nhật');

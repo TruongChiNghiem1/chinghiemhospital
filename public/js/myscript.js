@@ -69,7 +69,6 @@ $(document).ready(function(){
 
             if (data.status == 'error'){
                 Swal.fire({
-                    type: data.status,
                     html: data.message,
                     icon: data.status,
                     focusConfirm: false,

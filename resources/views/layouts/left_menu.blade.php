@@ -7,33 +7,73 @@
     </div>
     <ul id="sidebar_menu">
         <li class="side_menu_title">
-            <span>Dashboard</span>
+                <span>Thống kê</span>
         </li>
-        <li class="mm-active">
-            <a class="has-arrow" href="#" aria-expanded="false">
-
-                <img src="{{ asset('images/menu-icon/1.svg') }}" alt>
+        <li class>
+            <a class="" href="/dashboard" aria-expanded="false">
+                <img src="{{ asset('images/menu-icon/2.svg') }}" alt>
                 <span>Dashboard</span>
             </a>
+            <a class="has-arrow" href="#" aria-expanded="false">
+                <img src="{{ asset('images/menu-icon/2.svg') }}" alt>
+                <span>Báo cáo</span>
+            </a>
             <ul>
-                <li><a class="active" href="index.html">Dashboard
-                        1</a></li>
-                <li><a href="index_2.html">Dashboard 2</a></li>
+                <li><a href="#">Báo cáo bệnh nhân</a></li>
+                <li><a href="#">Báo cáo bác sĩ</a></li>
+                <li><a href="#">Báo cáo vật tư</a></li>
             </ul>
         </li>
         <li class="side_menu_title">
-            <span>Applications</span>
+                <span>Điều dưỡng</span>
         </li>
         <li class>
-            <a class="has-arrow" href="#" aria-expanded="false">
-                <img src="{{ asset('images/menu-icon/2.svg') }}" alt>
-                <span>Pages</span>
+            <a class="" href="/nursing" aria-expanded="false">
+                <img src="{{ asset('images/menu-icon/3.svg') }}" alt>
+                <span>Điều hướng</span>
             </a>
-            <ul>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="resister.html">Register</a></li>
-                <li><a href="forgot_pass.html">Forgot Password</a></li>
-            </ul>
+            <a class="" href="#" aria-expanded="false">
+                <img src="{{ asset('images/menu-icon/3.svg') }}" alt>
+                <span>Nộp tiền</span>
+            </a>
+            <a class="" href="#" aria-expanded="false">
+                <img src="{{ asset('images/menu-icon/3.svg') }}" alt>
+                <span>Trả tiền</span>
+            </a>
+            <a class="" href="#" aria-expanded="false">
+                <img src="{{ asset('images/menu-icon/3.svg') }}" alt>
+                <span>Phát thẻ</span>
+            </a>
+            <a class="" href="#" aria-expanded="false">
+                <img src="{{ asset('images/menu-icon/3.svg') }}" alt>
+                <span>Trả thẻ</span>
+            </a>
+        </li>
+        <li class="side_menu_title">
+                <span>Bác sĩ</span>
+        </li>
+        <li class>
+            <a class="" href="#" aria-expanded="false">
+                <img src="{{ asset('images/menu-icon/3.svg') }}" alt>
+                <span>Khám bệnh</span>
+            </a>
+            <a class="" href="#" aria-expanded="false">
+                <img src="{{ asset('images/menu-icon/3.svg') }}" alt>
+                <span>Lịch trực</span>
+            </a>
+            <a class="" href="#" aria-expanded="false">
+                <img src="{{ asset('images/menu-icon/3.svg') }}" alt>
+                <span>Đơn nghỉ phép</span>
+            </a>
+        </li>
+        <li class="side_menu_title">
+                <span>Phòng xét nghiệm</span>
+        </li>
+        <li class="side_menu_title">
+                <span>Nhà thuốc</span>
+        </li>
+        <li class="side_menu_title">
+            <span>Y tá</span>
         </li>
         <li class>
             <a class="has-arrow" href="#" aria-expanded="false">
@@ -47,7 +87,21 @@
             </ul>
         </li>
         <li class="side_menu_title">
-            <span>Components</span>
+            <span>Quản lý</span>
+        </li>
+        <li class>
+            <a class="has-arrow" href="#" aria-expanded="false">
+                <img src="{{ asset('images/menu-icon/3.svg') }}" alt>
+                <span>Nhân viên</span>
+            </a>
+            <ul>
+                <li><a href="mail_box.html">Danh sách nhân viên</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </li>
+        <li class="side_menu_title">
+            <span>Bác sĩ</span>
         </li>
         <li class>
             <a class="has-arrow" href="#" aria-expanded="false">
@@ -78,53 +132,6 @@
                 </li>
             </ul>
         </li>
-        <li class>
-            <a class="has-arrow" href="#" aria-expanded="false">
-                <img src="{{ asset('images/menu-icon/5.svg') }}" alt>
-                <span>Widgets</span>
-            </a>
-            <ul>
-                <li><a href="chart_box_1.html">Chart Boxes 1</a></li>
-                <li><a href="profilebox.html">Profile Box</a></li>
-            </ul>
-        </li>
-        <li class>
-            <a class="has-arrow" href="#" aria-expanded="false">
-                <img src="{{ asset('images/menu-icon/6.svg') }}" alt>
-                <span>Forms</span>
-            </a>
-            <ul>
-                <li><a href="#">Elements</a>
-                    <ul>
-                        <li><a href="data_table.html">Data
-                                Tables</a></li>
-                        <li><a href="bootstrap_table.html">Grid
-                                Tables</a></li>
-                        <li><a href="datepicker.html">Date
-                                Picker</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Widgets</a>
-                    <ul>
-                        <li><a href="Input_Selects.html">Input
-                                Selects</a></li>
-                        <li><a href="Input_Mask.html">Input
-                                Mask</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li class>
-            <a class="has-arrow" href="#" aria-expanded="false">
-                <img src="{{ asset('images/menu-icon/7.svg') }}" alt>
-                <span>Charts</span>
-            </a>
-            <ul>
-                <li><a href="chartjs.html">ChartJS</a></li>
-                <li><a href="apex_chart.html">Apex Charts</a></li>
-                <li><a href="chart_sparkline.html">Chart
-                        sparkline</a></li>
-            </ul>
-        </li>
+
     </ul>
 </nav>

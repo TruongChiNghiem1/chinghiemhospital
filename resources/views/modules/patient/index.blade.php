@@ -27,9 +27,9 @@
                             <form method="post" action="{{ route('patient.save_information') }}" role="form" class="form-ajax">
                                 <div class="row">
                                     <div class="col-md-12 mb-3">
-                                        <label class="form-label fs-6" for="code">Căn cước công dân / Citizen identification card <span class="text-danger">*</span></label>
-                                        <input name="code" class="form-control"
-                                               id="code"
+                                        <label class="form-label fs-6" for="indentity_card">Căn cước công dân / Citizen identification card <span class="text-danger">*</span></label>
+                                        <input name="indentity_card" class="form-control"
+                                               id="indentity_card"
                                                placeholder="Vd: 096..."
                                                 required>
                                     </div>

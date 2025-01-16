@@ -5,11 +5,11 @@ namespace App\Models;
 use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 use Illuminate\Database\Eloquent\Model;
 
-class Profile extends Model
+class Patient extends Model
 {
     use Cachable;
-    protected $table = 'profiles';
-    protected $table_name = "Thông tin cá nhân";
+    protected $table = 'patients';
+    protected $table_name = "Thông tin bệnh nhân";
     public $incrementing = false;
     protected $fillable = [
         'id',
@@ -29,5 +29,6 @@ class Profile extends Model
         'allergy',
         'medical_history',
         'emergency_contact',
+        'indentity_card',
     ];
 }

@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('catch_the_numbers', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('profile_id');
+            $table->bigInteger('patient_id');
             $table->integer('numerical_order');
             $table->bigInteger('service_id')->nullable();
             $table->bigInteger('room_id')->nullable();

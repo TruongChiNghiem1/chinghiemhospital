@@ -13,7 +13,7 @@ class AdmissionRecord extends Model
     public $incrementing = false;
     protected $fillable = [
         'id',
-        'profile_id',
+        'patient_id',
         'admission_date',
         'discharge',
         'admission_reason_id',
