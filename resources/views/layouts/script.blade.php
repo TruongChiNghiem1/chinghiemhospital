@@ -40,6 +40,8 @@
 <script src="{{ asset('vendors/text_editor/summernote-bs4.js') }}"></script>
 <script src="{{ asset('vendors/apex_chart/apexcharts.js') }}"></script>
 
+{{--<script src="{{ asset('js/bootstrap-table.min.js') }}"></script>--}}
+<script src="{{ asset('js/dataTables.min.js') }}"></script>
 <script src="{{ asset('js/custom.js') }}"></script>
 <script src="{{ asset('vendors/apex_chart/bar_active_1.js') }}"></script>
 <script src="{{ asset('vendors/apex_chart/apex_chart_list.js') }}"></script>

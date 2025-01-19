@@ -100,6 +100,12 @@
                 <li><a href="faq.html">FAQ</a></li>
             </ul>
         </li>
+        <li class>
+            <a class="" href="/medical-examination" aria-expanded="false">
+                <img src="{{ asset('images/menu-icon/3.svg') }}" alt>
+                <span>Khoa khám bệnh</span>
+            </a>
+        </li>
         <li class="side_menu_title">
             <span>Bác sĩ</span>
         </li>
@@ -114,8 +120,7 @@
                         <li><a href="buttons.html">Buttons</a></li>
                         <li><a href="dropdown.html">Dropdowns</a></li>
                         <li><a href="Badges.html">Badges</a></li>
-                        <li><a href="Loading_Indicators.html">Loading
-                                Indicators</a></li>
+                        <li><a href="Loading_Indicators.html">Loading Indicators</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Components</a>

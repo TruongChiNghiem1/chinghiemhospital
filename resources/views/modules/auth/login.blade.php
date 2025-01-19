@@ -23,7 +23,7 @@
                                     </div>
 
                                     <div class="modal-body">
-                                        <form action="{{ route('post_login') }}" method="POST" class="form-ajax">
+                                        <form action="{{ route('login') }}" method="POST" class="form-ajax">
                                             <div class>
                                                 <input name="username"
                                                        type="text"

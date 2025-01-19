@@ -32,15 +32,25 @@ return [
 
         'local' => [
             'driver' => 'local',
-            'root' => storage_path('app/private'),
+//            'root' => storage_path('app/private'),
+            'root' => config('app.datafile.path'),
             'serve' => true,
             'throw' => false,
         ],
 
+        'upload' => [
+            'driver' => 'local',
+            'root' => config('app.datafile.path'),
+            'url' => config('app.datafile.public_url', '/uploads'),
+            'visibility' => 'public',
+        ],
+
         'public' => [
             'driver' => 'local',
-            'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+//            'root' => storage_path('app/public'),
+            'root' => config('app.datafile.path') . '/uploads',
+//            'url' => env('APP_URL').'/storage',
+            'url' => config('app.datafile.public_url', '/uploads'),
             'visibility' => 'public',
             'throw' => false,
         ],
